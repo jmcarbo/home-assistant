@@ -1,17 +1,18 @@
+FROM resin/raspberrypi3-python
 # Notice:
 # When updating this file, please also update virtualization/Docker/Dockerfile.dev
 # This way, the development image and the production image are kept in sync.
 
-FROM python:3.6
+#FROM python:3.6
 LABEL maintainer="Paulus Schoutsen <Paulus@PaulusSchoutsen.nl>"
 
 # Uncomment any of the following lines to disable the installation.
-#ENV INSTALL_TELLSTICK no
-#ENV INSTALL_OPENALPR no
-#ENV INSTALL_FFMPEG no
-#ENV INSTALL_LIBCEC no
-#ENV INSTALL_PHANTOMJS no
-#ENV INSTALL_SSOCR no
+# ENV INSTALL_TELLSTICK no
+# ENV INSTALL_OPENALPR no
+# ENV INSTALL_FFMPEG no
+# ENV INSTALL_LIBCEC no
+# ENV INSTALL_PHANTOMJS no
+# ENV INSTALL_SSOCR no
 
 VOLUME /config
 
